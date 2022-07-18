@@ -1,11 +1,10 @@
-package com.lucasbrunkhorst.data.request;
+package com.lucasbrunkhorst.http.data.request;
 
 import java.math.BigDecimal;
 
 public class ProdutoPersistDTO {
 
     private String descricao;
-
     private BigDecimal valor;
 
     public String getDescricao() {
