@@ -14,5 +14,3 @@ services:
     expose:
       - 61616
       - 8161
-
-
