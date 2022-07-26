@@ -4,7 +4,10 @@ import com.lucasbrunkhorst.model.Produto;
 
 public interface ProdutoService {
 
-    Produto inserir(Produto produto);
-
+    Produto save(Produto produto);
     Produto one(Long id);
+
+    void delete(Long id);
+
+    Produto update(Produto produto);
 }

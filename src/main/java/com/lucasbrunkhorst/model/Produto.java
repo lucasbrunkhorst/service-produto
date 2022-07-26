@@ -24,6 +24,11 @@ public class Produto {
     public Produto() {
     }
 
+    public Produto(@NonNull Long id, @NonNull String descricao, @NonNull BigDecimal valor) {
+        this.id = Objects.requireNonNull(id, "Id é obrigatório.");
+        this.descricao = Objects.requireNonNull(descricao);
+        this.valor = Objects.requireNonNull(valor);
+    }
     public Produto(@NonNull String descricao, @NonNull BigDecimal valor) {
         this.descricao = Objects.requireNonNull(descricao);
         this.valor = Objects.requireNonNull(valor);
